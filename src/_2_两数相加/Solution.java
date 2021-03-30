@@ -12,8 +12,8 @@ import java.util.LinkedList;
 public class Solution {
 	/**
 	 * self思路：【11ms 20%..弱智了..仔细读题啊..明明链表从头开始遍历，而开头都是个位！！所以直接一一相加即可..见Solution2】
-	 * 1.对l1和l2采取：先压栈，再出栈，每位*10^k
-	 * 2.求出两数之和，再写回一个新链表
+	 * 1.对l1和l2采取：先压栈，再出栈，拼成String，getNum()
+	 * 2.对两个String进行一位一位的求和getSum()
 	 * 3.【ATT应该考虑越界？->用String装数字】
 	 */
 	public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
